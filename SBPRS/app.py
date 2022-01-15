@@ -2,7 +2,6 @@ import model
 from flask import Flask, request, render_template, url_for
 import pandas as pd
 import numpy as np
-import pickle
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -26,7 +25,7 @@ def predict():
             reco_prod = model.re_suggested_prod(uname)
             final_result = model.find_positive_sentiment()
 
-            return render_template('result.html',tables=[final_result.to_html(classes='id'), reco_prod.to_html(classes='id')], titles = ['NAN','The 2nd table depicts the suggested top 20 products by the Recommendation Engine'])
+            return render_template('result.html',tables=[final_result.to_html(classes='id'), reco_prod.to_html(classes='id')], titles = ['NAN'])
     else:
         return '<h2>Page refresh is not allowed</h2>'
 

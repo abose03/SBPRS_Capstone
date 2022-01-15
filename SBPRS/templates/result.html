@@ -2,7 +2,7 @@
 <title>Prediction</title>
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 <div class=page>
-  <h1>Top 5 products from 20 products suggested by the RE, with the highest percentage of positive reviews</h1>
+  <h1>Top 5 products from 20 products suggested by the RE in the 2nd table, with the highest percentage of positive reviews</h1>
   {% for table in tables %}
     <h2>{{titles[loop.index]}}</h2>
     {{ table|safe }}
