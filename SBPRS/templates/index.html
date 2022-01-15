@@ -1,0 +1,17 @@
+<head>
+    <title>Sentiment based Product Recommendation System</title>
+</head>
+ 
+<body>
+    <!-- <form action ="{{ url_for('predict')}}", method = "post"></form> -->
+    <form action ="{{ url_for('predict')}}", method = "post">
+        <br><br>
+        <p><h1>Welcome to the Sentiment based Product Recommendation System</h1></p>
+        <br><br><br><br>
+        <label for="firstname">Please provide user-name:</label>
+        <input type = "text", id="username" name="uname", placeholder="user name", required = "required"/>
+        <br>
+        <p><button type = "submit" class = "btn btn-primary btn-block btn-large">Recommend Best 5 Products</button></p>
+        <br><br><br>
+    </form>
+</body>
